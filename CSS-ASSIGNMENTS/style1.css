@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+}
+
+.course {
+    border: 1px solid black;
+    padding: 15px;
+    margin: 10px;
+    width: 200px;
+    display: inline-block;
+}
+
+.course > h3 {
+    color: blue;
+}
+
+h3 + p {
+    font-style: italic;
+}
+
+a:hover {
+    color: red;
+}
+
+li:first-child {
+    font-weight: bold;
+}
+
+.course:hover {
+    background: skyblue;
+}
+
+.course:first-child {
+    background: lightyellow;
+}
+
+.course:last-child {
+    background: lightgreen;
+}

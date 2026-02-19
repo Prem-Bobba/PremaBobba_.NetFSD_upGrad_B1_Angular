@@ -1,0 +1,33 @@
+.product-card {
+    width: 200px;
+    padding: 15px;
+    margin: 10px;
+    border: 1px solid purple;
+    box-shadow: 2px 2px 5px orange;
+    display: inline-block;
+}
+
+.product-card img {
+    width: 100%;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-card:nth-child(even) {
+    background: white;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+button:hover {
+    background: green;
+    color: white;
+}
+
+#cart {
+    margin-top: 30px;
+}

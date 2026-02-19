@@ -1,0 +1,28 @@
+.card {
+    margin: 15px;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+tr:hover {
+    background: wheat;
+}
+
+.credit {
+    color: green;
+}
+
+.debit {
+    color: red;
+}
+
+button:active {
+    background: black;
+    color: white;
+}
+
+input[type="password"] {
+    padding: 8px;
+}
