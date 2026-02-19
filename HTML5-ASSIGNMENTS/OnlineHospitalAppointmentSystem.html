@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hospital Appointment</title>
+</head>
+
+<body>
+
+<header>
+    <h1>Hospital Appointment Booking</h1>
+</header>
+
+<main>
+
+<form>
+
+Department:
+<input list="departments" required>
+<datalist id="departments">
+    <option value="Cardiology">
+    <option value="Neurology">
+    <option value="Orthopedics">
+</datalist><br><br>
+
+Doctor:
+<input list="doctors"><br><br>
+<datalist id="doctors">
+    <option value="Dr. Sharma">
+    <option value="Dr. Reddy">
+</datalist>
+
+Appointment Date:
+<input type="date" min="2026-01-01" required><br><br>
+
+Appointment Time:
+<input type="time" id="apptTime"><br><br>
+
+Age:
+<input type="number" min="0" max="120" required><br><br>
+
+Phone:
+<input type="tel" pattern="[0-9]{10}" required><br><br>
+
+Email:
+<input type="email" required><br><br>
+
+Upload Medical Reports:
+<input type="file" multiple required><br><br>
+
+Emergency:
+<input type="checkbox"><br><br>
+
+<input type="submit" value="Book Appointment">
+
+</form>
+
+</main>
+
+</body>
+</html>

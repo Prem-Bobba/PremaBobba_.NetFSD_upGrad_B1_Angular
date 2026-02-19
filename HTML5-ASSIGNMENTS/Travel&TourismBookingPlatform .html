@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Travel Booking</title>
+</head>
+
+<body>
+
+<header>
+    <h1>Travel Booking Platform</h1>
+</header>
+
+<main>
+
+<form>
+
+Source City:
+<input list="cities" required><br><br>
+
+Destination City:
+<input list="cities" required><br><br>
+
+<datalist id="cities">
+    <option value="Hyderabad">
+    <option value="Delhi">
+    <option value="Mumbai">
+</datalist>
+
+Departure Date:
+<input type="date" required><br><br>
+
+Return Date:
+<input type="date" required><br><br>
+
+Travel Class:
+<select required>
+    <option>Economy</option>
+    <option>Business</option>
+</select><br><br>
+
+Preferred Airline:
+<input list="airlines"><br><br>
+<datalist id="airlines">
+    <option value="IndiGo">
+    <option value="Air India">
+</datalist>
+
+Passengers:
+<input type="number" min="1" max="10" required><br><br>
+
+Meal Preference Color:
+<input type="color"><br><br>
+
+Special Notes:
+<textarea placeholder="Enter special assistance requirements..."></textarea><br><br>
+
+<input type="submit" value="Book Travel">
+
+</form>
+
+<section>
+    <h2>Promotional Video</h2>
+    <video controls width="400" poster="travel.jpg">
+        <source src="travel.mp4" type="video/mp4">
+    </video>
+</section>
+
+<section>
+    <h2>Travel Theme Music</h2>
+    <audio autoplay loop controls>
+        <source src="travel.mp3" type="audio/mpeg">
+        Audio not supported.
+    </audio>
+</section>
+
+</main>
+
+</body>
+</html>

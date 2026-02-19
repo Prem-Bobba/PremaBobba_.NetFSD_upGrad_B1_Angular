@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>E-Learning Registration</title>
+</head>
+
+<body>
+
+<header>
+    <h1>Course Registration Portal</h1>
+</header>
+
+<main>
+
+<section>
+    <h2>Introduction Video</h2>
+    <video controls width="400">
+        <source src="course.mp4" type="video/mp4">
+       
+    </video>
+</section>
+<br>
+<form>
+
+Course:
+<input list="courses" required>
+<datalist id="courses">
+    <option value="Full Stack Development">
+    <option value="Data Science">
+</datalist><br><br>
+
+Batch Month:
+<input type="month" required><br><br>
+
+Session Time:
+<input type="time" required><br><br>
+
+Skill Level:
+<input type="range" min="0" max="10"><br><br>
+
+Enrollment Progress:
+<progress value="60" max="100"></progress><br><br>
+
+<input type="submit" value="Enroll">
+
+</form>
+
+</main>
+
+</body>
+</html>

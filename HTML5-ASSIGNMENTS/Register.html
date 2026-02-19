@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Registration - NextGen Solutions</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+
+<header>
+    <h1>NextGen Solutions</h1>
+
+    <nav>
+        <a href="MiniProject.html">Home</a> 
+    </nav>
+</header>
+
+<hr>
+
+<main>
+<section>
+
+<h2>User Registration</h2>
+
+<form autocomplete="on">
+
+Name:<br>
+<input type="text" placeholder="Enter your name" required autofocus><br><br>
+
+Email:<br>
+<input type="email" autocomplete="on" required><br><br>
+
+Phone (10 digits):<br>
+<input type="tel" pattern="[0-9]{10}" placeholder="9876543210" required><br><br>
+
+Age:<br>
+<input type="number" min="18" max="60" step="1"><br><br>
+
+Skill Level:<br>
+<input type="range" min="1" max="10"><br><br>
+
+Preferred Color:<br>
+<input type="color"><br><br>
+
+Course Start Date:<br>
+<input type="date"><br><br>
+
+Meeting Time:<br>
+<input type="time"><br><br>
+
+Upload Files:<br>
+<input type="file" multiple><br><br>
+
+Preferred Language:<br>
+<input list="languages">
+
+<datalist id="languages">
+    <option value="HTML">
+    <option value="CSS">
+    <option value="JavaScript">
+    <option value="Python">
+    <option value="Java">
+    <option value="C++">
+    <option value="Go">
+    <option value="React">
+</datalist>
+
+<br><br>
+
+<input type="submit" value="Register">
+<input type="reset" value="Reset">
+
+</form>
+
+</section>
+</main>
+
+<hr>
+
+<footer>
+    <p>© 2026 NextGen Solutions</p>
+</footer>
+
+</body>
+</html>

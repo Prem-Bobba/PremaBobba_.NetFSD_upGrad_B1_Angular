@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bank Account Opening</title>
+</head>
+
+<body>
+
+<header>
+    <h1>Open Savings Account</h1>
+</header>
+
+<main>
+
+<form>
+
+Full Name:
+<input type="text" required><br><br>
+
+Email:
+<input type="email" required><br><br>
+
+Phone:
+<input type="tel" pattern="[0-9]{10}" required><br><br>
+
+PAN Number:
+<input type="text" pattern="[A-Z]{5}[0-9]{4}[A-Z]{1}" required><br><br>
+
+IFSC Code:
+<input type="text" pattern="[A-Z]{4}[0-9]{7}" required><br><br>
+
+Account Type:
+<input list="accountTypes" required>
+<datalist id="accountTypes">
+    <option value="Savings">
+    <option value="Current">
+</datalist><br><br>
+
+Date of Birth:
+<input type="date" max="2007-01-01" required><br><br>
+
+Monthly Income:
+<input type="number" step="1000" required><br><br>
+
+Upload ID Proof:
+<input type="file" required><br><br>
+
+<input type="submit" value="Open Account">
+
+</form>
+
+</main>
+
+</body>
+</html>
