@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Responsive Page</title>
+
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: lightgray;
+            font-size: 20px;
+            margin: 0;
+        }
+
+        nav {
+            background-color: black;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        @media (max-width: 600px) {
+            
+            body {
+                background-color: lightblue; 
+                font-size: 14px; 
+            }
+
+            nav {
+                display: flex;
+                flex-direction: column; 
+            }
+
+            nav a {
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div style="padding:20px;">
+        <h1>Responsive Website</h1>
+        <p>This page changes layout on mobile screen.</p>
+    </div>
+
+</body>
+</html>
