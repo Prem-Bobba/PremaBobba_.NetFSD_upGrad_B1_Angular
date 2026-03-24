@@ -1,0 +1,18 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace CSharp_LINQ_Assignments
+{
+    internal class Student
+    {
+        public int Id { get; set; }
+        public string? Name { get; set; }
+        public int Age { get; set; }
+        public int Marks { get; set; }
+        public string Class { get; set; }
+        public string Subject { get; set; }
+
+
+    }
+}
