@@ -1,0 +1,35 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+</head>
+<body>
+    @{
+        ViewData["Title"] = "ViewBag vs ViewData";
+    }
+
+    <h2>Student Details</h2>
+
+    <p>Name : @ViewBag.Name</p>
+    <p>Age : @ViewData["Age"]</p>
+
+    @{
+        int age = (int)ViewData["Age"];
+    }
+
+    <p>Age after casting: @age</p>
+
+    <hr />
+
+    <p><b>Comparison:</b></p>
+    <p>ViewBag → Dynamic (No casting needed)</p>
+    <p>ViewData → Needs casting (stored as object)</p>
+</body>
+</html>
